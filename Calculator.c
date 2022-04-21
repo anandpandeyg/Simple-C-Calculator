@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
   float answer;
 
   printf("Enter calculation:\n\n");
-  scanf("%f %c %f", &valueOne, &operator, & valueTwo);
+  scanf("%f %c %f", &valueOne, &operato, & valueTwo);
 
-  switch(operator)
+  switch(operato)
     {
     case '/': answer = valueOne/valueTwo;
       break;
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
       break;
     default: goto fail;
     }
-  printf("%.9g%c%.9g =  %.6g\n\n",valueOne,operator, valueTwo, answer);
+  printf("%.9g%c%.9g =  %.6g\n\n",valueOne,operato, valueTwo, answer);
   goto exit;
  fail:
   printf("Fail.\n");
